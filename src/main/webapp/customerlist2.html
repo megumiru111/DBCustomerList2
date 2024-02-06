@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>管理画面</title>
+</head>
+<body>
+  <h2>顧客情報を更新します</h2>
+  <form action="/DBCustomerList2/customerlist2" method="post">
+  判別ID（主キー） <input type="text" name="no" /><br />
+  製品番号  <input type="text" name="puroduct_no" /><br />	
+  製品名  <input type="text" name="puroduct_name" /><br />  
+  納品日  <input type="text" name="delivery_date" /><br />
+  企業名  <input type="text" name="company_name" /><br />
+  担当者名  <input type="text" name="person_in_charge" /><br />
+  担当部署  <input type="text" name="department_in_charge" /><br />
+  役職  <input type="text" name="post" /><br />
+  住所  <input type="text" name="addres" /><br />
+  電話番号  <input type="text" name="telephone_number" /><br />
+  メールアドレス  <input type="text" name="mail_addres" /><br />
+  対応状況  <input type="text" name="action" /><br />
+  取引履歴  <input type="text" name="trading_history" /><br />
+  特記事項  <input type="text" name="notes" /><br />
+  <input type="submit" name="btn" value="追加" />
+  <input type="submit" name="btn" value="修正" />
+  <input type="submit" name="btn" value="削除" />
+  <input type="submit" name="btn" value="表示" />
+  </form>
+</body>
+</html>
