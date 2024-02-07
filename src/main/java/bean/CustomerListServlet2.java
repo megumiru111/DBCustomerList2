@@ -14,7 +14,7 @@ public class CustomerListServlet2 extends HttpServlet {
   public void doPost(HttpServletRequest req, HttpServletResponse res)
       throws IOException, ServletException {
   	String msg = "全ての顧客情報を表示します";
-  	//入力値（ｂｔｎ）を取得
+  	//入力値（btn）を取得
   	req.setCharacterEncoding("utf-8");
   	String btn = req.getParameter("btn");
     //DAOオブジェクトを生成
@@ -58,7 +58,7 @@ public class CustomerListServlet2 extends HttpServlet {
        cdao.update(no, puroduct_no, puroduct_name, delivery_date, company_name,
     	     person_in_charge, department_in_charge, post, addres, telephone_number, 
     			 mail_addres, action, trading_history, notes);
-      msg = "判別ID（主キー）" + no + "の顧客情報を修正しました";
+       msg = "判別ID（主キー）" + no + "の顧客情報を修正しました";
      } else if (btn.equals("削除")) {
     	 int no = Integer.parseInt(req.getParameter("no"));
     	 cdao.delete(no);
